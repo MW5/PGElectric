@@ -19,6 +19,8 @@ class Model {
     
     //article
     public $content;
+    public $gallery;
+    public $galleryPicFiles;
     
     //footer
     public $copyright;
@@ -49,7 +51,7 @@ class Model {
     public function prepareNav() {
         echo "<body>
                 <nav id='standardNav'>
-                    <img src='$this->logoAddress' id='logo' alt='$this->altLogoImgText'</img>
+                    <img src='$this->logoAddress' id='logo' alt='$this->altLogoImgText'>
                     <ul class='standardNavBtnList'>";
         foreach ($this->navBtns as $name=>$action) {
             echo "<li><a href='$action.php' id='$action' class='navBtn'>$name</a></li>";
@@ -60,6 +62,7 @@ class Model {
     public function prepareHeader() {
         echo "<header><h1>$this->header</h1></header>";
     }
+    //prepare content will be inside each website content copy it and DELETE
     public function prepareContent() {
         echo "<main><div class='content'>
                 $this->content
