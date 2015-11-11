@@ -15,6 +15,8 @@
             echo "</div>";
             
             echo "<div id='gallCol2-2R'>";
+            echo "<div id='arrowUp'><img src='../Assets/Img/gallArrUp.png' alt='galleryArrowUp'></div>";
+            echo "<div id='arrowDown'><img src='../Assets/Img/gallArrDown.png' alt='galleryArrowDown'></div>";
             $counter = 0;
             foreach ($this->galleryPicFiles as $address=>$alt) {
                 $counter++;

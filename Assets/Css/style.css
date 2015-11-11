@@ -82,7 +82,7 @@ main {
 #gallCol1-2L, #gallCol2-2R {
     vertical-align: middle;
     display: inline-block;
-    /*border: 1px solid yellow;*/
+    /*border: 1px solid yellow; DISCUSS*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -93,8 +93,35 @@ main {
 }
 
 #gallCol2-2R {
+    position: relative;
     width: 27%;
     margin-left: 1%;
+}
+
+#arrowUp {
+    position: absolute;
+    top: 0px;
+    height: 7%;
+    width: 100%;
+    background-color: rgba(255,255,0,0.6);
+    text-align: center;
+}
+#arrowUp img {
+    height: 100%;
+    width: auto;
+}
+
+#arrowDown {
+    position: absolute;
+    bottom: 0px;
+    height: 7%;
+    width: 100%;
+    background-color: rgba(255,255,0,0.6);
+    text-align: center;
+}
+#arrowDown img {
+    height: 100%;
+    width: auto;
 }
 
 .imgHidden, .imgVisible, .imgCurrent {
