@@ -21,12 +21,7 @@
             echo "<div id='arrowDown'><img src='../Assets/Img/gallArrDown.png' alt='galleryArrowDown'></div>";
             $counter = 0;
             foreach ($this->galleryPicFiles as $address=>$alt) {
-                $counter++;
-                if ($counter > 3) {
-                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgHidden imgBarPic' width='100%' height='auto'>";
-                } else {
-                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgVisible imgBarPic' width='100%' height='auto'>";
-                }
+                echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgBarPic' width='100%' height='auto'>";
             }
             echo "</div>";
             echo "</div></main>";
