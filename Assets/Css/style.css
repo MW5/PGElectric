@@ -94,14 +94,18 @@ main {
 
 #gallCol2-2R {
     position: relative;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    height: 606px;
     width: 27%;
     margin-left: 1%;
+    overflow: hidden;
 }
 
 #arrowUp {
     position: absolute;
     top: 0px;
-    height: 7%;
+    height: 43px;
     width: 100%;
     background-color: rgba(255,255,0,0.6);
     text-align: center;
@@ -114,7 +118,7 @@ main {
 #arrowDown {
     position: absolute;
     bottom: 0px;
-    height: 7%;
+    height: 43px;
     width: 100%;
     background-color: rgba(255,255,0,0.6);
     text-align: center;
@@ -124,13 +128,23 @@ main {
     width: auto;
 }
 
-.imgHidden, .imgVisible, .imgCurrent {
+.imgHidden, .imgVisible, #imgCurrent {
     vertical-align: middle;
 }
 
 .imgHidden {
     display: none;
 }
+
+#arrowUp:hover, #arrowDown:hover {
+    background-color: yellow;
+}
+
+.imgBarPic:hover {
+    -webkit-filter: contrast(1.2);
+}
+
+
 
 /*footer*/
 #footerWrapper {

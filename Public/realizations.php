@@ -11,7 +11,9 @@
         public function prepareContent() {   
             echo "<main><div class='content'>";
             echo "<div id='gallCol1-2L'>";
-                echo "<img src='../Assets/Img/test1.jpg' id='test' alt='test' class='imgCurrent' width='100%' height='auto'>";
+                reset($this->galleryPicFiles);
+                $firstFromArr = key($this->galleryPicFiles);
+                echo "<img src='../Assets/Img/".$firstFromArr."' id='imgCurrent' alt='test' width='100%' height='auto'>";
             echo "</div>";
             
             echo "<div id='gallCol2-2R'>";
@@ -21,9 +23,9 @@
             foreach ($this->galleryPicFiles as $address=>$alt) {
                 $counter++;
                 if ($counter > 3) {
-                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgHidden' width='100%' height='auto'>";
+                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgHidden imgBarPic' width='100%' height='auto'>";
                 } else {
-                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgVisible' width='100%' height='auto'>";
+                    echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgVisible imgBarPic' width='100%' height='auto'>";
                 }
             }
             echo "</div>";
