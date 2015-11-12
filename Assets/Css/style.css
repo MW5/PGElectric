@@ -94,8 +94,6 @@ main {
 
 #gallCol2-2R {
     position: relative;
-    padding-top: 43px;
-    padding-bottom: 43px;
     height: 606px;
     width: 27%;
     margin-left: 1%;
@@ -103,12 +101,13 @@ main {
 }
 
 #arrowUp {
+    z-index: 1000;
     position: absolute;
     top: 0px;
-    height: 43px;
+    height: 35px;
     width: 100%;
-    background-color: rgba(255,255,0,0.6);
     text-align: center;
+    background-color: rgba(255,255,0,0.4);
 }
 #arrowUp img {
     height: 100%;
@@ -116,12 +115,13 @@ main {
 }
 
 #arrowDown {
+    z-index: 1000;
     position: absolute;
     bottom: 0px;
-    height: 43px;
+    height: 35px;
     width: 100%;
-    background-color: rgba(255,255,0,0.6);
     text-align: center;
+    background-color: rgba(255,255,0,0.4);
 }
 #arrowDown img {
     height: 100%;
@@ -137,7 +137,7 @@ main {
 }
 
 #arrowUp:hover, #arrowDown:hover {
-    background-color: yellow;
+    background-color: rgba(255,255,0,0.8);
 }
 
 .imgBarPic:hover {
@@ -149,7 +149,7 @@ main {
 /*footer*/
 #footerWrapper {
     /*change*/
-    position: fixed; 
+    position: absolute; 
     bottom: 10px;
     left: 6%;
 }

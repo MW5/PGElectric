@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on("load", function() {
     //add rule to test screen size and change nav into dropdown menu!
     
     //signal current site
@@ -11,7 +11,9 @@ $(document).ready(function() {
     });
     
     //gallery functionality
-        //img bar
+        //fixes interminnent layout problem?
+    //$("#content").css("vertical-align", "middle");
+        //img bar click handlers
     $("#arrowDown").click(function() {
         if ($("#gallCol2-2R").find($(".imgBarPic:last")).hasClass("imgHidden")) {
             $("#gallCol2-2R").find($(".imgVisible:first")).removeClass("imgVisible").addClass("imgHidden");
@@ -20,7 +22,6 @@ $(document).ready(function() {
     });
     $("#arrowUp").click(function() {
         if ($("#gallCol2-2R").find($(".imgBarPic:first")).hasClass("imgHidden")) {
-            console.log("dupa");
             $("#gallCol2-2R").find($(".imgVisible:last")).removeClass("imgVisible").addClass("imgHidden");
             $("#gallCol2-2R").find($(".imgVisible:first")).prev().removeClass("imgHidden").addClass("imgVisible");
         } 
