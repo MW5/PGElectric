@@ -45,13 +45,13 @@ $(window).on("load", function() {
     $("#arrowUp").mouseover(function() {
         scrollUp = setInterval(function(){
             if (position < 0) {
-                position+=10;
+                position+=5;
                 $("#gallCol2-2R").find($(".imgBarPic")).css("top", position);  
                 $("#arrowDown").show();
                 } else {
                     $("#arrowUp").hide();
                 } 
-        }, 60);  
+        }, 30);  
     });
     $("#arrowUp").mouseout(function() {
         clearInterval(scrollUp);
@@ -60,13 +60,13 @@ $(window).on("load", function() {
     $("#arrowDown").mouseover(function() {
         scrollDown = setInterval(function(){
             if (position > maxPos) {
-                position-=10;
+                position-=5;
                 $("#gallCol2-2R").find($(".imgBarPic")).css("top", position);
                 $("#arrowUp").show();
                 } else {
                     $("#arrowDown").hide();
                 } 
-        }, 60); 
+        }, 30); 
     });
     $("#arrowDown").mouseout(function() {
         clearInterval(scrollDown);

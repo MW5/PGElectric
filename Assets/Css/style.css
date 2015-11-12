@@ -82,19 +82,19 @@ main {
 #gallCol1-2L, #gallCol2-2R {
     vertical-align: middle;
     display: inline-block;
-    /*border: 1px solid yellow; DISCUSS*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #gallCol1-2L {
-    width: 78%;
-    margin-right: 1%;
+    width: 77%;
+    border-right: 1px solid yellow;
+    padding-right: 1%;
 }
 
 #gallCol2-2R {
     position: relative;
-    height: 583px;
+    height: 575px;
     width: 20%;
     margin-left: 1%;
     overflow: hidden;
@@ -131,7 +131,7 @@ main {
     width: auto;
 }
 
-.imgBarPic, #imgCurrent {
+.imgBarPic {
     vertical-align: middle;
 }
 
