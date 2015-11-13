@@ -32,7 +32,6 @@ $(window).on("load", function() {
         //get sum of images heights
         $("#gallCol2-2R .imgBarPic").each(function() {
                     heightSum += $(this).height();
-                    console.log(heightSum);
         });
         //plus image column height
         colHeight = $("#gallCol2-2R").height();
