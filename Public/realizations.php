@@ -28,7 +28,6 @@
             echo "</div>";//test
             echo "</div>";
             echo "</div></main>";
-            
         }
     }
     

@@ -9,7 +9,7 @@
             echo "<main><div class='content'>";
             echo "<h2>Test content</h2>";
             echo "</div></main>";
-            echo "<div id='fancyBckgrnd'></div>"; //styling elementś
+            echo "<div id='fancyBckgrnd'></div>"; //styling element
         }
     }
 

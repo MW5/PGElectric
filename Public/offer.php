@@ -5,7 +5,12 @@
     class Website extends LangEn {
         public $title = "Offer";
         public $header = "Offer";
-        public $content = "<h1>TEST CONTENT</h1>"; //CHECK COMMENT ABOUT CONTENT IN MODEL.PHP
+        public function prepareContent() {
+            echo "<main><div class='content'>";
+            echo "<h2>Test content</h2>";
+            echo "</div></main>";
+            echo "<div id='fancyBckgrnd'></div>"; //styling element
+        }
     }
 
     $page = new Website;

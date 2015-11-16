@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-    background-color: #dddfdf; /*black*/
+    background-color: #dddfdf;
     color: black;
     font-family: Tahoma, Geneva, sans-serif;
 }
@@ -19,7 +19,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #dddfdf; /*black*/
+    background-color: #dddfdf;
     margin-top: 20px;
     padding-left: 4%;
     padding-right: 4%;
@@ -47,11 +47,11 @@ a {
     transition: background-color 0.5s ease;
     transition: color 0.5s ease;
     background-color: #999DA3;
-    color: #db0000;
+    color: rgb(255,120,5);
 }
 
 .navActive {
-    color: #db0000;
+    color: rgb(255,120,5);
 }
 
 /*smartphone nav*/
@@ -151,7 +151,7 @@ main h2 {
     -webkit-filter: contrast(1.2);
 }
 
-/*index*/
+/*background ornament*/
 #fancyBckgrnd {
     position: absolute;
     bottom: 0px;
@@ -159,9 +159,8 @@ main h2 {
     height: 388px;
     width: 860px;
     background: url("../Img/fancy_background.png");
+    z-index: -10;
 }
-
-
 
 /*footer*/
 #footerWrapper {
