@@ -19,9 +19,13 @@
             foreach ($this->galleryPicFiles as $address=>$alt) {
                 echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgBarPic' width='100%' height='auto'>";
             }
-        //see if arrows cause the layout fuckups PROBABLY FIXED
+        //see if arrows cause the layout fuckups 
+            echo "<div>"; //test
             echo "<div id='arrowUp'><img src='../Assets/Img/gallArrUp.png' alt='galleryArrowUp'></div>";
+            echo "</div>";//test
+            echo "<div>";//test
             echo "<div id='arrowDown'><img src='../Assets/Img/gallArrDown.png' alt='galleryArrowDown'></div>";
+            echo "</div>";//test
             echo "</div>";
             echo "</div></main>";
             

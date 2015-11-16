@@ -6,8 +6,8 @@ body, html {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #dddfdf; /*black*/
+    color: black;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -19,7 +19,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: #dddfdf; /*black*/
     margin-top: 20px;
     padding-left: 4%;
     padding-right: 4%;
@@ -39,20 +39,19 @@ a {
 }
 .navBtn {
     padding: 10px 5% 10px 5%;
-    background-color: black;
-    color: white;
-    border-top: 1px solid yellow;
-    border-bottom: 1px solid yellow;
+    color: black;
+    border-top: 1px solid #999DA3;
+    border-bottom: 1px solid #999DA3;
 }
 .navBtn:hover {
     transition: background-color 0.5s ease;
     transition: color 0.5s ease;
-    background-color: yellow;
-    color: black;
+    background-color: #999DA3;
+    color: #db0000;
 }
 
 .navActive {
-    color: yellow;
+    color: #db0000;
 }
 
 /*smartphone nav*/
@@ -63,11 +62,12 @@ header {
     width: 88%;
     margin-left: 6%;
     margin-right: 6%;
-    border-bottom: 1px solid yellow;
-    color: white
+    border-bottom: 1px solid #999DA3;
 }
 header h1 {
+    color: black;
     padding-left: 5%;
+    font-weight: 300;
 }
 
 /*content*/
@@ -76,6 +76,9 @@ main {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+}
+main h2 {
+    font-weight: 300;
 }
 
 /*gallery*/
@@ -89,7 +92,7 @@ main {
 #gallCol1-2L {
     position: relative;
     width: 77%;
-    border-right: 1px solid yellow;
+    border-right: 1px solid #999DA3;
     padding-right: 1%;
 }
 
@@ -109,7 +112,7 @@ main {
     height: 35px;
     width: 100%;
     text-align: center;
-    background-color: rgba(255,255,0,0.4);
+    background-color: rgba(153,157,163,0.4);
 }
 #arrowUp img {
     height: 100%;
@@ -123,7 +126,7 @@ main {
     height: 35px;
     width: 100%;
     text-align: center;
-    background-color: rgba(255,255,0,0.4);
+    background-color: rgba(153,157,163,0.4);
 }
 #arrowDown img {
     height: 100%;
@@ -136,7 +139,7 @@ main {
 
 
 #arrowUp:hover, #arrowDown:hover {
-    background-color: rgba(255,255,0,0.8);
+    background-color: rgba(153,157,163,0.8);
 }
 
 .imgBarPic {
@@ -146,6 +149,16 @@ main {
 }
 .imgBarPic:hover {
     -webkit-filter: contrast(1.2);
+}
+
+/*index*/
+#fancyBckgrnd {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 388px;
+    width: 860px;
+    background: url("../Img/fancy_background.png");
 }
 
 
