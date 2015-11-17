@@ -112,7 +112,7 @@ main h2 {
     height: 35px;
     width: 100%;
     text-align: center;
-    background-color: rgba(153,157,163,0.4);
+    background-color: rgba(255,120,5,0.4);
 }
 #arrowUp img {
     height: 100%;
@@ -126,7 +126,7 @@ main h2 {
     height: 35px;
     width: 100%;
     text-align: center;
-    background-color: rgba(153,157,163,0.4);
+    background-color: rgba(255,120,5,0.4);
 }
 #arrowDown img {
     height: 100%;
@@ -139,7 +139,7 @@ main h2 {
 
 
 #arrowUp:hover, #arrowDown:hover {
-    background-color: rgba(153,157,163,0.8);
+    background-color: rgba(255,120,5,0.8);
 }
 
 .imgBarPic {
