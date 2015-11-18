@@ -49,7 +49,7 @@ class Model {
               </head>";
     }
     public function prepareNav() {
-        echo "<body>
+        echo "<body><div id='bodyContainer'>
                 <nav id='standardNav'>
                     <img src='$this->logoAddress' id='logo' alt='$this->altLogoImgText'>
                     <ul class='standardNavBtnList'>";
@@ -73,7 +73,7 @@ class Model {
     public function prepareFooter() {
         echo "<footer id='footerWrapper'>
                 $this->copyright
-            </footer></body></html>";     
+            </footer></div></body></html>";     
     }
     
 }

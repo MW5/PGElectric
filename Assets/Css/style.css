@@ -3,9 +3,12 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-body {
+#bodyContainer {
+    position: relative;
+    min-height: 100%;
     background-color: #dddfdf;
     color: black;
     font-family: Tahoma, Geneva, sans-serif;
@@ -20,7 +23,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     background-color: #dddfdf;
-    margin-top: 20px;
+    padding-top: 3vh;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -71,26 +74,46 @@ header h1 {
 }
 
 /*content*/
-
 main {
     width: 70%;
+    margin-top: 10px;
+    padding-bottom: 10px;
     margin-left: 15%;
     margin-right: 15%;
+    line-height: 1.5em;
 }
 main h2 {
     font-weight: 300;
+}
+
+/*background ornament*/
+#fancyBckgrnd {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 50vh;
+    width: 100vh;
+    background: url("../Img/fancy_background.png");
+    z-index: -10;
+}
+
+/*footer*/
+#footerWrapper {
+    /*change*/
+    position: absolute; 
+    bottom: 0px;
+    left: 6%;
 }
 
 /*gallery*/
 #gallCol1-2L, #gallCol2-2R {
     vertical-align: middle;
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #gallCol1-2L {
     position: relative;
+    height: 75vh;
     width: 77%;
     border-right: 1px solid #999DA3;
     padding-right: 1%;
@@ -98,7 +121,7 @@ main h2 {
 
 #gallCol2-2R {
     position: relative;
-    height: 575px;
+    height: 75vh;
     width: 20%;
     margin-left: 1%;
     overflow: hidden;
@@ -151,21 +174,40 @@ main h2 {
     -webkit-filter: contrast(1.2);
 }
 
-/*background ornament*/
-#fancyBckgrnd {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 388px;
-    width: 860px;
-    background: url("../Img/fancy_background.png");
-    z-index: -10;
+/*contact*/
+
+#contactCol1-2L, #contactCol2-2R {
+    display: inline-block;
+    vertical-align: middle;
+}
+#contactCol1-2L {
+    position: relative;
+    width: 68%;
+    height: 64vh;
+    border-right: 1px solid #999DA3;
+    padding-right: 1%;
+}
+#contactCol2-2R {
+    position: relative;
+    width: 29%;
+    height: 64vh;
+    margin-left: 1%;
 }
 
-/*footer*/
-#footerWrapper {
-    /*change*/
-    position: fixed; 
-    bottom: 10px;
-    left: 6%;
+#contactCol1-2L iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#addrWrapper, #hoursWrapper {
+    padding-left: 10%;
+    margin-top: 3vh;
+}
+#addrWrapper td, #hoursWrapper td {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#addrWrapper caption, #hoursWrapper caption {
+    text-align: left;
+    font-weight: bold;
 }

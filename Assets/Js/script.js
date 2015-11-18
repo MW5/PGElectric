@@ -10,22 +10,7 @@ $(window).on("load", function() {
         }
     });
     
-    //gallery functionality
-        //img bar click handlers
-    //clickable arrows
-    /*$("#arrowDown").click(function() {
-        if ($("#gallCol2-2R").find($(".imgBarPic:last")).hasClass("imgHidden")) {
-            $("#gallCol2-2R").find($(".imgVisible:first")).removeClass("imgVisible").addClass("imgHidden");
-            $("#gallCol2-2R").find($(".imgVisible:last")).next().removeClass("imgHidden").addClass("imgVisible");
-        } 
-    });
-    $("#arrowUp").click(function() {
-        if ($("#gallCol2-2R").find($(".imgBarPic:first")).hasClass("imgHidden")) {
-            $("#gallCol2-2R").find($(".imgVisible:last")).removeClass("imgVisible").addClass("imgHidden");
-            $("#gallCol2-2R").find($(".imgVisible:first")).prev().removeClass("imgHidden").addClass("imgVisible");
-        } 
-    });*/
-    
+    //gallery functionality   
     //calculate maximal scroll position
     calcMaxPos = function() {
         heightSum = 0;

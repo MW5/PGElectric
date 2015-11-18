@@ -7,7 +7,7 @@
         public $header = "Home";
         public function prepareContent() {
             echo "<main><div class='content'>";
-            echo "<h2>Test content</h2>";
+            echo "<div>Patrick photo, bussiness hours, contact";
             echo "</div></main>";
             echo "<div id='fancyBckgrnd'></div>"; //styling element
         }
