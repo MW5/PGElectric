@@ -7,14 +7,16 @@
         public $header = "Offer";
         public function prepareContent() {
             echo "<main><div class='content'>";
-            echo "<h2>Test content</h2>";
-            echo "<ul id='offerList'>"
-                . "<li>Lorem ipsum dolor</li>"
-                . "<li>sit amet enim. Etiam ullamcorper.</li>"
-                . "<li>Suspendisse a pellentesque dui</li>"
-                . "<li>non felis. Maecenas malesuada</li>"
-                . "<li>elit lectus felis, malesuada ultricies.</li>"
-                . "<li>Curabitur et ligula.</li>";
+            echo "<h2>Provided services</h2>"
+                . "<ul id='offerList'>"
+                    . "<li>Repairs & Fault Finding</li>"
+                    . "<li>Household Wiring</li>"
+                    . "<li>Lighting Installation</li>"
+                    . "<li>Socket Outlet Installation</li>"
+                    . "<li>Testing and Inspection / Condition Surveys</li>"
+                    . "<li>Domestic Appliance Installation</li>"
+                    . "<li>External & Garden Lighting Installation and Design</li>"
+                    . "<li>Data/Telephone point installation</li>";
             echo "</ul></div></main>";
             echo "<div id='fancyBckgrnd'></div>"; //styling element
         }

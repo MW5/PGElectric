@@ -3,8 +3,8 @@
     require "../View/langEn.php";
     
     class Website extends LangEn {
-        public $title = "Realizations";
-        public $header = "Realizations";
+        public $title = "Gallery";
+        public $header = "Gallery";
         public $galleryPicFiles = array("test1.jpg" => "alt1", "test2.jpg" => "alt2", "test3.jpg" => "alt3",
             "test4.jpg" => "alt4", "test5.jpg" => "alt5", "test6.jpg" => "alt6", "test7.jpg" => "alt7");
         

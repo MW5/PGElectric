@@ -1,5 +1,10 @@
 $(window).on("load", function() {
     //add rule to test screen size and change nav into dropdown menu!
+    if ($(window).width()<860) {
+        $(".standardNav").removeClass("standardNav").addClass("smartphoneNav");
+        $(".standardNavBtnList").removeClass("standardNavBtnList").addClass("smartphoneNavBtnList");
+        $(".standardNavBtn").removeClass("standardNavBtn").addClass("smartphoneNavBtn");
+    }
     
     //signal current site
     $(".navBtn").each(function(){

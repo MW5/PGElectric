@@ -12,13 +12,15 @@ body, html {
     background-color: #dddfdf;
     color: black;
     font-family: Tahoma, Geneva, sans-serif;
+    z-index: 1;
 }
 
 a {
     text-decoration: none;
 }
 
-#standardNav {
+/*navigation*/
+.standardNav {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -27,26 +29,26 @@ a {
     padding-left: 4%;
     padding-right: 4%;
 }
-#standardNav img {
+.standardNav img {
     vertical-align: middle;
     width: 15%;
 }
-#standardNav ul {
+.standardNav ul {
     width: 85%;
 }
-#standardNav img, ul {
+.standardNav img, .standardNav ul {
     display: inline;
 }
 .standardNavBtnList li{
     display: inline;
 }
-.navBtn {
+.standardNavBtn {
     padding: 10px 5% 10px 5%;
     color: black;
     border-top: 1px solid #999DA3;
     border-bottom: 1px solid #999DA3;
 }
-.navBtn:hover {
+.standardNavBtn:hover {
     transition: background-color 0.5s ease;
     transition: color 0.5s ease;
     background-color: #999DA3;
@@ -58,6 +60,40 @@ a {
 }
 
 /*smartphone nav*/
+.smartphoneNav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dddfdf;
+    padding-top: 3vh;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.smartphoneNav img {
+    display: none;
+}
+.smartphoneNav ul {
+    width: 85%;
+}
+
+.smartphoneNavBtnList li{
+    display: block;
+    border-bottom: 1px solid #999DA3;
+}
+.smartphoneNavBtn {
+    display: block;
+    font-size: 13vh;
+    width: 100%;
+    height: 15vh;
+    color: black;
+}
+.smartphoneNavBtnList li:active {
+    background-color: #999DA3;
+}
+
+.navActive {
+    background-color: #999DA3;
+}
 
 /*header*/
 header {
@@ -75,12 +111,12 @@ header h1 {
 
 /*content*/
 main {
-    width: 70%;
+    width: 60%;
     margin-top: 10px;
     padding-bottom: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    line-height: 1.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.7em;
 }
 main h2 {
     font-weight: 300;
@@ -117,6 +153,11 @@ main h2 {
     width: 77%;
     border-right: 1px solid #999DA3;
     padding-right: 1%;
+}
+
+#imgCurrent {
+    height: 100%;
+
 }
 
 #gallCol2-2R {
@@ -182,21 +223,14 @@ main h2 {
 }
 #contactCol1-2L {
     position: relative;
-    width: 68%;
+    width: 49%;
     height: 64vh;
     border-right: 1px solid #999DA3;
-    padding-right: 1%;
 }
 #contactCol2-2R {
     position: relative;
-    width: 29%;
+    width: 50%;
     height: 64vh;
-    margin-left: 1%;
-}
-
-#contactCol1-2L iframe {
-    width: 100%;
-    height: 100%;
 }
 
 #addrWrapper, #hoursWrapper {
@@ -210,4 +244,34 @@ main h2 {
 #addrWrapper caption, #hoursWrapper caption {
     text-align: left;
     font-weight: bold;
+}
+
+/*aboutUs*/
+#about h2 {
+    margin-bottom: 5vh;
+}
+#about h3 {
+    margin-left: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#about ul {
+    margin-left: 5%;
+}
+
+/*home*/
+#p0 {
+    margin-left: 2%;
+}
+#p1 {
+    margin-left: 6%;
+}
+#p2 {
+    margin-left: 10%;
+}
+#p3 {
+    margin-left: 14%;
+}
+#p4 {
+    margin-left: 16%;
 }
