@@ -15,7 +15,7 @@
                 <p id='p3'>We provide our services timely and with highest precision.</p>
                 <p id='p4'>Using our services guarantees satisfaction.</p></div>";
             echo "</div></main>";
-            echo "<div id='fancyBckgrnd'></div>"; //styling element
+            echo "<img src='../Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
         }
     }
 

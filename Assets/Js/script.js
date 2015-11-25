@@ -4,6 +4,9 @@ $(window).on("load", function() {
         $(".standardNav").removeClass("standardNav").addClass("smartphoneNav");
         $(".standardNavBtnList").removeClass("standardNavBtnList").addClass("smartphoneNavBtnList");
         $(".standardNavBtn").removeClass("standardNavBtn").addClass("smartphoneNavBtn");
+        //fixes contact on mobile devices
+        $("#contactCol1-2L").css('display', 'inline');
+        $("#contactCol2-2R").css('display', 'inline');
     }
     
     //signal current site

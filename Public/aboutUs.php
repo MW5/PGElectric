@@ -16,7 +16,7 @@
                     . "<li>Complete set of essential, high-end tools</li>"
                     . "<li>Car</li></ul>"
                 . "</div></div></main>";
-            echo "<div id='fancyBckgrnd'></div>"; //styling element
+            echo "<img src='../Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
         }
     }
 

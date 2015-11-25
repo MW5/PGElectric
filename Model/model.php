@@ -41,6 +41,7 @@ class Model {
     public function prepareHead() {
         echo "<html><head>
                 <meta charset='UTF-8'>
+                <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <title>$this->title</title>
                 <script src='$this->jqueryAddress'></script>
                 <script src='$this->jsAddress'></script>
