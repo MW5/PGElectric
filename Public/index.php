@@ -13,9 +13,13 @@
                 <p id='p1'>In PG Electric we always help you in the best possible manner.</p>
                 <p id='p2'>Knowledge, experience and involvement are our biggest assets.</p>
                 <p id='p3'>We provide our services timely and with highest precision.</p>
-                <p id='p4'>Using our services guarantees satisfaction.</p></div>";
+                <p id='p4'>Using our services guarantees satisfaction.</p>
+                <p id='p5'><a href='http://www.ratedpeople.com/profile/electrician-specialist/'>Rated People recommendations</a></p></div>";
+            
             echo "</div></main>";
+            echo "<img src='../Assets/Img/fancy_background2.png' id='fancyBckgrnd2' alt='stylingElement'></img>"; //styling element
             echo "<img src='../Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
+            
         }
     }
 

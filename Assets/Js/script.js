@@ -66,7 +66,10 @@ $(window).on("load", function() {
     
     $(".imgBarPic").click(function() {
         clickedSrc = $(this).attr("src");
-        $("#imgCurrent").attr("src", clickedSrc);
+        trimMinIndex = clickedSrc.indexOf("min_");
+        photoPath = clickedSrc.substr(0, trimMinIndex);
+        bigPhotoSrc = clickedSrc.substr(trimMinIndex+4);
+        $("#imgCurrent").attr("src", photoPath+bigPhotoSrc);
     });
     
 });

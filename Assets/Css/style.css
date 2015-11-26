@@ -19,6 +19,20 @@ body, html {
     z-index: 1;
 }
 
+.content {
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+    padding: 1vh 7% 3vh 7%;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px black;
+}
+h2, h3, caption {
+    color: rgba(255,120,5, 0.9);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+}
+
 a {
     text-decoration: none;
 }
@@ -124,7 +138,7 @@ main h2 {
     font-weight: 300;
 }
 
-/*background ornament*/
+/*background ornaments*/
 #fancyBckgrnd {
     position: absolute;
     bottom: 0vh;
@@ -133,13 +147,22 @@ main h2 {
     height: auto;
     z-index: -10;
 }
+#fancyBckgrnd2 {
+    position: absolute;
+    top: 0vh;
+    right: 0px;
+/*    width: 60%;*/
+    height: 100%;
+    width: auto;
+    z-index: -10;
+}
 
 /*footer*/
 #footerWrapper {
-    /*change*/
     position: absolute; 
-    bottom: 0px;
-    left: 6%;
+    bottom: 1%;
+    right: 3%;
+    color: rgba(0,0,0,0.5);
 }
 
 /*gallery*/
@@ -150,15 +173,21 @@ main h2 {
 
 #gallCol1-2L {
     position: relative;
-    height: 75vh;
+    height: auto;
     width: 77%;
     border-right: 1px solid #999DA3;
     padding-right: 1%;
+    z-index: 3;
 }
 
 #imgCurrent {
     height: 100%;
+    transition: all .2s ease-in-out;
+    border: 1px solid #999DA3;
+}
 
+#imgCurrent:hover {
+    transform: scale(1.4);
 }
 
 #gallCol2-2R {
@@ -167,6 +196,7 @@ main h2 {
     width: 20%;
     margin-left: 1%;
     overflow: hidden;
+    z-index: 2;
 }
 
 #arrowUp {
@@ -198,21 +228,18 @@ main h2 {
     width: auto;
 }
 
-.imgBarPic {
-    vertical-align: middle;
-}
-
-
 #arrowUp:hover, #arrowDown:hover {
     background-color: rgba(255,120,5,0.8);
 }
 
 .imgBarPic {
+    vertical-align: middle;
     position: relative;
     top: 0px;
     width:100%;
 }
 .imgBarPic:hover {
+    transition: all .2s ease-in-out;
     -webkit-filter: contrast(1.2);
 }
 
@@ -263,14 +290,22 @@ main h2 {
     margin-left: 2%;
 }
 #p1 {
-    margin-left: 6%;
+    margin-left: 7%;
 }
 #p2 {
-    margin-left: 10%;
+    margin-left: 11%;
 }
 #p3 {
     margin-left: 14%;
 }
 #p4 {
-    margin-left: 16%;
+    margin-left: 18%;
+}
+#p5 {
+    margin-left: 23%;
+}
+
+/*offer*/
+#offerList {
+    padding-left: 5%;
 }

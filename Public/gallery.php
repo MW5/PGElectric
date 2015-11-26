@@ -5,8 +5,12 @@
     class Website extends LangEn {
         public $title = "Gallery";
         public $header = "Gallery";
-        public $galleryPicFiles = array("test1.jpg" => "alt1", "test2.jpg" => "alt2", "test3.jpg" => "alt3",
-            "test4.jpg" => "alt4", "test5.jpg" => "alt5", "test6.jpg" => "alt6", "test7.jpg" => "alt7");
+        public $galleryPicFiles = array("min_ph1.jpg" => "certificate", "min_ph2.jpg" => "garden lighting",
+            "min_ph3.jpg" => "heated floor", "min_ph4.jpg" => "ceiling illumination",
+            "min_ph5.jpg" => "ceiling illumination", "min_ph6.jpg" => "outside lamp",
+            "min_ph7.jpg" => "inside lamps", "min_ph8.jpg" => "inside lighting",
+            "min_ph9.jpg" => "fuse box", "min_ph10.jpg" => "switch box", "min_ph11.jpg" => "wiring",
+            "min_ph12.jpg" => "electrical box");
         
         public function prepareContent() {   
             echo "<main><div class='content'>";
@@ -28,6 +32,8 @@
             echo "</div>";//test
             echo "</div>";
             echo "</div></main>";
+            echo "<img src='../Assets/Img/fancy_background2.png' id='fancyBckgrnd2' alt='stylingElement'></img>"; //styling element
+            echo "<img src='../Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
         }
     }
     
