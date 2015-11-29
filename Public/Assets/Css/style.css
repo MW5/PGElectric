@@ -23,6 +23,7 @@ body, html {
     position: relative;
     background-color: rgba(0,0,0,0.1);
     padding: 1vh 7% 3vh 7%;
+    margin-bottom: 7vh;
 }
 
 h1 {
@@ -232,19 +233,18 @@ main h2 {
     background-color: rgba(255,120,5,0.8);
 }
 
-.imgBarPic {
+#gallCol2-2R .imgBarPic {
     vertical-align: middle;
     position: relative;
     top: 0px;
     width:100%;
 }
-.imgBarPic:hover {
+#gallCol2-2R .imgBarPic:hover {
     transition: all .2s ease-in-out;
     -webkit-filter: contrast(1.2);
 }
 
 /*contact*/
-
 #contactCol1-2L, #contactCol2-2R {
     display: inline-block;
     vertical-align: middle;

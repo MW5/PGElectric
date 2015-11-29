@@ -1,5 +1,5 @@
 $(window).on("load", function() {
-    //add rule to test screen size and change nav into dropdown menu!
+    //for smartphones
     if ($(window).width()<860) {
         $(".standardNav").removeClass("standardNav").addClass("smartphoneNav");
         $(".standardNavBtnList").removeClass("standardNavBtnList").addClass("smartphoneNavBtnList");
@@ -7,6 +7,14 @@ $(window).on("load", function() {
         //fixes contact on mobile devices
         $("#contactCol1-2L").css('display', 'inline');
         $("#contactCol2-2R").css('display', 'inline');
+        //no fancy on background
+        $("#fancyBckgrnd").remove();
+        $("#fancyBckgrnd2").remove();
+        //smartphone gallery fix
+        $("#gallCol1-2L").remove();
+        $("#gallCol2-2R").attr("id", "smartphoneGall");
+        $("#arrowUp").remove();
+        $("#arrowDown").remove();
     }
     
     //signal current site
@@ -33,17 +41,19 @@ $(window).on("load", function() {
     
     position = 0;
     maxPos = calcMaxPos();
+    smoothness = 5; //5
+    speed = 15; //30
     
     $("#arrowUp").mouseover(function() {
         scrollUp = setInterval(function(){
             if (position < 0) {
-                position+=5;
+                position+=smoothness;
                 $("#gallCol2-2R").find($(".imgBarPic")).css("top", position);  
                 $("#arrowDown").show();
                 } else {
                     $("#arrowUp").hide();
                 } 
-        }, 30);  
+        }, speed);  
     });
     $("#arrowUp").mouseout(function() {
         clearInterval(scrollUp);
@@ -52,13 +62,13 @@ $(window).on("load", function() {
     $("#arrowDown").mouseover(function() {
         scrollDown = setInterval(function(){
             if (position > maxPos) {
-                position-=5;
+                position-=smoothness;
                 $("#gallCol2-2R").find($(".imgBarPic")).css("top", position);
                 $("#arrowUp").show();
                 } else {
                     $("#arrowDown").hide();
                 } 
-        }, 30); 
+        }, speed); 
     });
     $("#arrowDown").mouseout(function() {
         clearInterval(scrollDown);
