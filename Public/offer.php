@@ -18,8 +18,8 @@
                     . "<li>External & Garden Lighting Installation and Design</li>"
                     . "<li>Data/Telephone point installation</li>";
             echo "</ul></div></main>";
-            echo "<img src='../Assets/Img/fancy_background2.png' id='fancyBckgrnd2' alt='stylingElement'></img>"; //styling element
-            echo "<img src='../Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
+            echo "<img src='Assets/Img/fancy_background2.png' id='fancyBckgrnd2' alt='stylingElement'></img>"; //styling element
+            echo "<img src='Assets/Img/fancy_background.png' id='fancyBckgrnd' alt='stylingElement'></img>"; //styling element
         }
     }
 

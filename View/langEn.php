@@ -3,6 +3,7 @@
 require "../Controller/config.php";
 
 class LangEn extends Config {
+    public $iconAddress = "Assets/Img/PGElectric_logo_min.png";
     //nav
     public $logoAddress = "Assets/Img/PGElectric_logo.png";
     public $altLogoImgText = "PGElectric logo";

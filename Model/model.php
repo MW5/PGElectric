@@ -6,6 +6,7 @@ class Model {
     public $styleAddress;
     public $jsAddress;
     public $jqueryAddress;
+    public $jsAddressCookies;
     public $iconAddress;
     
     //body
@@ -36,6 +37,7 @@ class Model {
         $this->prepareHeader();
         $this->prepareContent();
         $this->prepareFooter();
+        $this->prepareCookieInfo();
     }
     
     public function prepareHead() {
@@ -45,6 +47,7 @@ class Model {
                 <title>$this->title</title>
                 <script src='$this->jqueryAddress'></script>
                 <script src='$this->jsAddress'></script>
+                <script src='$this->jsAddressCookies'></script>
                 <link rel='stylesheet' type='text/css' href='$this->styleAddress'/>
                 <link rel='shortcut icon' href='$this->iconAddress'/>
               </head>";
@@ -74,7 +77,16 @@ class Model {
     public function prepareFooter() {
         echo "<footer id='footerWrapper'>
                 $this->copyright
-            </footer></div></body></html>";     
+            </footer></div>";     
     }
     
+    public function prepareCookieInfo() {
+        echo "<script type='text/javascript'>
+                $(document).ready(function() {
+                $.cookiesDirective({
+                privacyPolicyUri: 'privacy_policy.php'
+                });
+                });
+             </script></body></html>";
+    }  
 }

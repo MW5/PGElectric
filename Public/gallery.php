@@ -17,19 +17,18 @@
             echo "<div id='gallCol1-2L'>";
                 reset($this->galleryPicFiles);
                 $firstFromArr = key($this->galleryPicFiles);
-                echo "<img src='../Assets/Img/".$firstFromArr."' id='imgCurrent' alt='test' width='100%' height='auto'>";
+                echo "<img src='Assets/Img/".$firstFromArr."' id='imgCurrent' alt='test' width='100%' height='auto'>";
             echo "</div>";
             echo "<div id='gallCol2-2R'>";
             foreach ($this->galleryPicFiles as $address=>$alt) {
-                echo "<img src='../Assets/Img/$address' id='$alt' alt='$alt' class='imgBarPic' width='100%' height='auto'>";
+                echo "<img src='Assets/Img/$address' id='$alt' alt='$alt' class='imgBarPic' width='100%' height='auto'>";
             }
-        //see if arrows cause the layout fuckups 
-            echo "<div>"; //test
-            echo "<div id='arrowUp'><img src='../Assets/Img/gallArrUp.png' alt='galleryArrowUp'></div>";
-            echo "</div>";//test
-            echo "<div>";//test
-            echo "<div id='arrowDown'><img src='../Assets/Img/gallArrDown.png' alt='galleryArrowDown'></div>";
-            echo "</div>";//test
+            echo "<div>"; 
+            echo "<div id='arrowUp'><img src='Assets/Img/gallArrUp.png' alt='galleryArrowUp'></div>";
+            echo "</div>";
+            echo "<div>";
+            echo "<div id='arrowDown'><img src='Assets/Img/gallArrDown.png' alt='galleryArrowDown'></div>";
+            echo "</div>";
             echo "</div>";
             echo "</div></main>";
             echo "<img src='Assets/Img/fancy_background2.png' id='fancyBckgrnd2' alt='stylingElement'></img>"; //styling element
