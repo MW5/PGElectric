@@ -169,7 +169,7 @@ main h2 {
 #footerWrapper {
     font-size: 10px;
     position: absolute; 
-    bottom: 1%;
+    bottom: 5px;
     right: 3%;
     color: rgba(0,0,0,0.5);
 }
@@ -201,6 +201,7 @@ main h2 {
     margin-left: 1%;
     overflow: hidden;
     z-index: 2;
+    border: 1px solid #999DA3;
 }
 #arrowUp {
     display: none;
@@ -251,6 +252,7 @@ main h2 {
         width: 100%;
         margin: 0;
         height: auto;
+        border: none;
     }
     .imgBarPic {
         margin-top: 1vh;
