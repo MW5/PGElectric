@@ -54,11 +54,11 @@ class Model {
     }
     public function prepareNav() {
         echo "<body><div id='bodyContainer'>
-                <nav class='standardNav'>
+                <nav class='nav'>
                     <img src='$this->logoAddress' id='logo' alt='$this->altLogoImgText'>
-                    <ul class='standardNavBtnList'>";
+                    <ul class='navBtnList'>";
         foreach ($this->navBtns as $name=>$action) {
-            echo "<li><a href='$action.php' id='$action' class='standardNavBtn navBtn'>$name</a></li>";
+            echo "<li><a href='$action.php' id='$action' class='navBtn navBtn'>$name</a></li>";
         }
         echo "</ul></nav>";
         

@@ -1,21 +1,4 @@
 $(window).on("load", function() {
-    //for smartphones
-    if ($(window).width()<860) {
-        $(".standardNav").removeClass("standardNav").addClass("smartphoneNav");
-        $(".standardNavBtnList").removeClass("standardNavBtnList").addClass("smartphoneNavBtnList");
-        $(".standardNavBtn").removeClass("standardNavBtn").addClass("smartphoneNavBtn");
-        //fixes contact on mobile devices
-        $("#contactCol1-2L").css('display', 'inline');
-        $("#contactCol2-2R").css('display', 'inline');
-        //no fancy on background
-        $("#fancyBckgrnd").remove();
-        $("#fancyBckgrnd2").remove();
-        //smartphone gallery fix
-        $("#gallCol1-2L").remove();
-        $("#gallCol2-2R").attr("id", "smartphoneGall");
-        $("#arrowUp").remove();
-        $("#arrowDown").remove();
-    }
     
     //signal current site
     $(".navBtn").each(function(){

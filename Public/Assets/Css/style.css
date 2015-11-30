@@ -3,13 +3,11 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-
 #bodyContainer {
     position: relative;
     min-height: 100%;
@@ -18,14 +16,12 @@ body, html {
     font-family: Tahoma, Geneva, sans-serif;
     z-index: 1;
 }
-
 .content {
     position: relative;
     background-color: rgba(0,0,0,0.1);
     padding: 1vh 7% 3vh 7%;
     margin-bottom: 7vh;
 }
-
 h1 {
     text-shadow: 1px 1px 1px black;
 }
@@ -37,9 +33,14 @@ h2, h3, caption {
 a {
     text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+    .content {
+        padding: 1vh 3% 3vh 3%;
+    }
+}
 
 /*navigation*/
-.standardNav {
+.nav {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -47,69 +48,58 @@ a {
     padding-left: 4%;
     padding-right: 4%;
 }
-.standardNav img {
+#logo {
     vertical-align: middle;
     width: 15%;
 }
-.standardNav ul {
-    width: 85%;
-}
-.standardNav img, .standardNav ul {
+.nav img, nav ul {
     display: inline;
 }
-.standardNavBtnList li{
+.navBtnList li{
     display: inline;
 }
-.standardNavBtn {
-    padding: 10px 5% 10px 5%;
+.navBtn {
+    padding: 1.5vh 5% 1.5vh 5%;
     color: black;
     border-top: 1px solid #999DA3;
     border-bottom: 1px solid #999DA3;
 }
-.standardNavBtn:hover {
+.navBtn:hover {
     transition: background-color 0.5s ease;
     transition: color 0.5s ease;
     background-color: #999DA3;
     color: rgb(255,120,5);
 }
-
 .navActive {
     color: rgb(255,120,5);
 }
 
-/*smartphone nav*/
-.smartphoneNav {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3vh;
-
-}
-.smartphoneNav img {
-    display: none;
-}
-
-
-.smartphoneNavBtnList li{
-    display: block;
-    border-bottom: 1px solid #999DA3;
-    padding: 0;
-    margin: 0;
-}
-.smartphoneNavBtn {
-    display: block;
-    font-size: 8vh;
-    width: 100%;
-    height: 10vh;
-    color: black;
-}
-.smartphoneNavBtnList li:active {
-    background-color: #999DA3;
-}
-
-.navActive {
-    background-color: #999DA3;
-    color: rgb(255,120,5);
+@media only screen and (max-width: 500px) {
+    .nav {
+        padding: 0;
+    }
+    #logo {
+        position: fixed;
+        z-index: -1;
+        top: 25vh;
+        left: 0;
+        width: 100%;
+        opacity: 0.1;
+    }
+    .navBtn {
+        display: block;
+        font-size: 8vh;
+        width: 100%;
+        height: 9vh;
+        color: black;
+        padding: 0.5vh 0 0.5vh 0;
+        border-top: none;
+    }
+    .navActive {
+        background-color: #999DA3;
+        color: rgb(255,120,5);
+        opacity: 0.7;
+    }
 }
 
 /*header*/
@@ -125,6 +115,13 @@ header h1 {
     padding-left: 5%;
     font-weight: 300;
 }
+@media only screen and (max-width: 500px) {
+    header {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 /*content*/
 main {
@@ -137,6 +134,12 @@ main {
 }
 main h2 {
     font-weight: 300;
+}
+@media only screen and (max-width: 500px) {
+    main {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
 }
 
 /*background ornaments*/
@@ -152,26 +155,29 @@ main h2 {
     position: absolute;
     top: 0vh;
     right: 0px;
-/*    width: 60%;*/
     height: 100%;
     width: auto;
     z-index: -10;
 }
+@media only screen and (max-width: 500px) {
+    #fancyBckgrnd2 {
+        display: none;
+    }
+}
 
 /*footer*/
 #footerWrapper {
+    font-size: 10px;
     position: absolute; 
     bottom: 1%;
     right: 3%;
     color: rgba(0,0,0,0.5);
 }
-
 /*gallery*/
 #gallCol1-2L, #gallCol2-2R {
     vertical-align: middle;
     display: inline-block;
 }
-
 #gallCol1-2L {
     position: relative;
     height: auto;
@@ -180,17 +186,14 @@ main h2 {
     padding-right: 1%;
     z-index: 3;
 }
-
 #imgCurrent {
     height: 100%;
     transition: all .2s ease-in-out;
     border: 1px solid #999DA3;
 }
-
 #imgCurrent:hover {
     transform: scale(1.4);
 }
-
 #gallCol2-2R {
     position: relative;
     height: 75vh;
@@ -199,7 +202,6 @@ main h2 {
     overflow: hidden;
     z-index: 2;
 }
-
 #arrowUp {
     display: none;
     z-index: 1000;
@@ -214,7 +216,6 @@ main h2 {
     height: 100%;
     width: auto;
 }
-
 #arrowDown {
     z-index: 1000;
     position: absolute;
@@ -228,7 +229,6 @@ main h2 {
     height: 100%;
     width: auto;
 }
-
 #arrowUp:hover, #arrowDown:hover {
     background-color: rgba(255,120,5,0.8);
 }
@@ -242,6 +242,22 @@ main h2 {
 #gallCol2-2R .imgBarPic:hover {
     transition: all .2s ease-in-out;
     -webkit-filter: contrast(1.2);
+}
+@media only screen and (max-width: 500px) {
+    #gallCol1-2L {
+        display: none;
+    }
+    #gallCol2-2R {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .imgBarPic {
+        margin-top: 1vh;
+    }
+    #arrowUp, #arrowDown {
+        display: none;
+    }
 }
 
 /*contact*/
@@ -258,7 +274,6 @@ main h2 {
     position: relative;
     width: 50%;
 }
-
 #addrWrapper, #hoursWrapper {
     padding-left: 10%;
     margin-top: 3vh;
@@ -270,6 +285,18 @@ main h2 {
 #addrWrapper caption, #hoursWrapper caption {
     text-align: left;
     font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+    #contactCol1-2L, #contactCol2-2R {
+        display: inline;
+        border: none;
+    }
+    #addrWrapper, #hoursWrapper {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /*aboutUs*/
@@ -303,6 +330,11 @@ main h2 {
 }
 #p5 {
     margin-left: 23%;
+}
+@media only screen and (max-width: 500px) {
+    #p0, #p1, #p2, #p3, #p4, #p5 {
+        margin-left: 3%;
+    }
 }
 
 /*offer*/
